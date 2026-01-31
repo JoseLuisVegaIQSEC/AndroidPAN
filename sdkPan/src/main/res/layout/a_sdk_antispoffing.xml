@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sdkPanAntispoffingRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".presentation.SDK_PAN">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sdkPanBackgroundCards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sdk_pan_gradient_clouds"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/sdkPanBackground1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingTop="@dimen/dimen48"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/sdk_pan_clouds" />
+
+        <ImageView
+            android:id="@+id/sdkPanBackground2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingTop="@dimen/dimen48"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/sdk_pan_clouds" />
+
+        <ImageView
+            android:id="@+id/sdkPanBackground3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingTop="@dimen/dimen48"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/sdk_pan_clouds" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/sdkPanAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sdk_wfc_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/sdkPanToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:orientation="vertical"
+                android:padding="0dp"
+                android:visibility="visible">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/sdkPanToolbarImgClose"
+                        android:background="@drawable/img_pan_color_navbtn"
+                        android:elevation="@dimen/dimen16"
+                        android:padding="@dimen/dimen8"
+                        android:src="@drawable/ic_pan_close"
+                        android:layout_width="@dimen/dimen40"
+                        android:layout_height="@dimen/dimen40"
+                        android:layout_margin="@dimen/dimen8"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/sdkPanToolbarCLTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/sdk_wfc_white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/sdkPanToolbarImgToolbar1"
+                            android:layout_width="50dp"
+                            android:layout_height="@dimen/dimen45"
+                            android:layout_marginVertical="@dimen/dimen8"
+                            android:layout_marginStart="@dimen/dimen16"
+                            android:foregroundGravity="center_horizontal"
+                            android:src="@drawable/img_pan_blue"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/sdkPanToolbarTitle3"
+                            style="@style/sdk_pan_text_toolbar_blue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/dimen10"
+                            android:layout_marginTop="@dimen/dimen8"
+                            android:text="@string/sdk_pan_a_pan_afiliate"
+                            android:textAllCaps="true"
+                            app:layout_constraintBottom_toTopOf="@+id/sdkPanToolbarTitle4"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintStart_toEndOf="@+id/sdkPanToolbarImgToolbar1"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/sdkPanToolbarTitle4"
+                            style="@style/sdk_pan_text_toolbar_1_blue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="@dimen/dimen10"
+                            android:gravity="start"
+                            android:maxLines="2"
+                            android:text="@string/sdk_pan_a_pan_join_movement"
+                            android:textAllCaps="true"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/sdkPanToolbarImgToolbar1"
+                            app:layout_constraintTop_toBottomOf="@+id/sdkPanToolbarTitle3" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/sdkPanToolbarCLNavigation"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen40"
+                        android:layout_marginHorizontal="@dimen/dimen8"
+                        android:layout_marginVertical="@dimen/dimen8"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sdkPanToolbarCLTitle">
+
+                        <TextView
+                            android:id="@+id/sdkPanToolbarTitle2"
+                            style="@style/sdk_pan_text_nav_white"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/dimen8"
+                            android:background="@drawable/sdk_pan_welcome_white"
+                            android:paddingHorizontal="@dimen/dimen16"
+                            android:paddingVertical="@dimen/dimen4"
+                            android:text="@string/sdk_pan_a_pan_txt_affiliation"
+                            android:textAllCaps="true"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/sdkPanToolbarImgToolbar2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/sdkPanToolbarImgToolbar2"
+                            android:layout_width="@dimen/dimen40"
+                            android:layout_height="@dimen/dimen40"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/img_pan_color_navbtn"
+                            android:elevation="@dimen/dimen16"
+                            android:padding="@dimen/dimen8"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_pan_arrow_left"
+                            android:visibility="visible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <fragment
+        android:id="@+id/sdkPanNavHostFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sdkPanAppBar"
+        app:navGraph="@navigation/nav_pan" />
+
+    <LinearLayout
+        android:id="@+id/sdkIQSECTimerText"
+        style="@style/SDKIQSECTimerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen8"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <ImageView
+            android:layout_width="@dimen/dimen15"
+            android:layout_height="@dimen/dimen15"
+            android:src="@drawable/icon_pan_clock"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen4"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="00:52" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

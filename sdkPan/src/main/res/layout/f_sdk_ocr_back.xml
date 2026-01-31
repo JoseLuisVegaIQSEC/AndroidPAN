@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.SDK_PAN">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen24"
+        android:background="@drawable/sdk_pan_card_gray"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen8"
+                android:layout_marginTop="@dimen/dimen8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/noticeHSTop">
+
+                <TextView
+                    android:id="@+id/takeBackINEtxtTitle"
+                    style="@style/sdk_pan_title_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sdk_take_image_back_ine_title_take"
+                    android:textAllCaps="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/takeBackINEtxtSubTitle"
+                    style="@style/sdk_pan_text_b2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen30"
+                    android:text="@string/sdk_take_image_back_ine_subtitle_take"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/takeBackINEtxtTitle" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/sdkPanCLTakeBackINE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen24"
+                    android:background="@drawable/sdk_pan_card_white"
+                    android:elevation="@dimen/dimen12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/takeBackINEtxtSubTitle">
+
+                    <ImageView
+                        android:id="@+id/noticeImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heigth_ine"
+                        android:layout_marginHorizontal="@dimen/dimen14"
+                        android:layout_marginVertical="@dimen/dimen24"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/img_back_ine"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias=".3" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clZoneTakeImage"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/gradient_black_transparent"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@+id/noticeImg"
+                        app:layout_constraintEnd_toEndOf="@+id/noticeImg"
+                        app:layout_constraintStart_toStartOf="@+id/noticeImg"
+                        app:layout_constraintTop_toTopOf="@+id/noticeImg">
+
+                        <TextView
+                            style="@style/sdk_pan_text_nav_white"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/dimen20"
+                            android:gravity="center"
+                            android:text="@string/sdk_take_image_txt_zone"
+                            android:textAllCaps="true"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_enter"
+                    style="@style/sdk_pan_btn_blue_gradient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen32"
+                    android:layout_marginBottom="@dimen/dimen16"
+                    app:layout_constraintVertical_bias="1"
+                    android:text="@string/lbl_continue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sdkPanCLTakeBackINE" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

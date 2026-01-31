@@ -1,0 +1,259 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="sdk_iqsec_DialogAnimation" parent="Theme.SDKAntispoffing">
+        <item name="android:windowEnterAnimation">@anim/sdk_a_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/sdk_a_fade_out</item>
+
+<!--        <item name="colorPrimary">@color/sdk_pan_btn_blue</item>-->
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SDKAntispoffing" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+    <style name="Theme.SDKAntispoffing" parent="Base.Theme.SDKAntispoffing" />
+
+
+    <style name="sdk_pan_font_montserrat_bold">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="sdk_pan_font_gotham_book">
+        <item name="android:fontFamily">@font/gotham_book</item>
+    </style>
+
+    <style name="sdk_pan_font_gotham_medium">
+        <item name="android:fontFamily">@font/gotham_medium</item>
+    </style>
+
+    <style name="sdk_pan_font_gotham_bold">
+        <item name="android:fontFamily">@font/gotham_bold</item>
+    </style>
+
+    <style name="sdk_pan_font_tusker_grotesk_bold">
+        <item name="android:fontFamily">@font/tusker_grotesk_7700bold</item>
+    </style>
+    <style name="sdk_pan_font_tusker_grotesk_medium">
+        <item name="android:fontFamily">@font/tusker_grotesk_6700bold</item>
+    </style>
+
+    <style name="sdk_pan_font_montserrat_medium">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="sdk_pan_text_h1_white" parent="sdk_pan_font_tusker_grotesk_medium">
+        <item name="android:textSize">@dimen/text20</item>
+        <item name="android:textColor">@color/sdk_wfc_white</item>
+    </style>
+
+    <style name="sdk_pan_title_blue" parent="sdk_pan_text_h1_white">
+        <item name="android:textSize">@dimen/text20</item>
+        <item name="android:textColor">@color/sdk_wfc_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/dimen8</item>
+        <item name="android:background">@drawable/sdk_pan_style_button_gradient</item>
+        <item name="android:paddingStart">@dimen/dimen8</item>
+        <item name="android:paddingEnd">@dimen/dimen8</item>
+        <item name="android:paddingTop">@dimen/dimen14</item>
+        <item name="android:paddingBottom">@dimen/dimen14</item>
+    </style>
+
+    <style name="sdk_pan_text_h2_blue" parent="sdk_pan_font_gotham_bold">
+        <item name="android:textSize">@dimen/text16</item>
+        <item name="android:textColor">@color/sdk_pan_text_h2_blue</item>
+    </style>
+
+    <style name="sdk_pan_text_h3_blue" parent="sdk_pan_font_tusker_grotesk_bold">
+        <item name="android:textSize">@dimen/text20</item>
+        <item name="android:textColor">@color/sdk_pan_text_h3_blue</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="sdk_pan_text_h7_blue" parent="sdk_pan_font_gotham_bold">
+        <item name="android:textSize">@dimen/text16</item>
+        <item name="android:textColor">@color/sdk_pan_text_h4_blue</item>
+    </style>
+
+    <style name="sdk_pan_text_h8_black" parent="sdk_pan_font_gotham_medium">
+        <item name="android:textSize">@dimen/text16</item>
+        <item name="android:textColor">@color/sdk_pan_text_h8_black</item>
+    </style>
+
+    <style name="sdk_pan_text_nav_white" parent="sdk_pan_font_tusker_grotesk_bold">
+        <item name="android:textSize">@dimen/text18</item>
+        <item name="android:textColor">@color/sdk_wfc_white</item>
+    </style>
+
+    <style name="sdk_pan_text_body_white" parent="sdk_pan_font_tusker_grotesk_medium">
+        <item name="android:textSize">@dimen/text14</item>
+        <item name="android:textColor">@color/sdk_wfc_white</item>
+    </style>
+
+    <style name="sdk_pan_text_nav_blue" parent="sdk_pan_font_tusker_grotesk_medium">
+        <item name="android:textSize">@dimen/text20</item>
+        <item name="android:textColor">@color/sdk_pan_nav_blue</item>
+    </style>
+
+    <style name="sdk_pan_text_toolbar_blue" parent="sdk_pan_font_tusker_grotesk_medium">
+        <item name="android:textSize">@dimen/text20</item>
+        <item name="android:textColor">@color/sdk_pan_toolbar_blue</item>
+    </style>
+
+    <style name="sdk_pan_text_toolbar_1_blue" parent="sdk_pan_font_tusker_grotesk_medium">
+        <item name="android:textSize">@dimen/text16</item>
+        <item name="android:textColor">@color/sdk_pan_toolbar_blue</item>
+    </style>
+
+
+    <style name="sdk_pan_text_h1_black" parent="sdk_pan_font_montserrat_bold">
+        <item name="android:textSize">@dimen/text24</item>
+        <item name="android:textColor">@color/sdk_wfc_black</item>
+    </style>
+
+    <style name="sdk_pan_text_h3" parent="sdk_pan_font_montserrat_bold">
+        <item name="android:textSize">@dimen/text16</item>
+        <item name="android:textColor">@color/sdk_pan_text_h3</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="sdk_pan_text_s3_blue" parent="sdk_pan_font_montserrat_medium">
+        <item name="android:textSize">@dimen/text12</item>
+        <item name="android:textColor">@color/sdk_pan_text_h3</item>
+    </style>
+
+    <style name="sdk_pan_text_s4_blue" parent="sdk_pan_font_gotham_book">
+        <item name="android:textSize">@dimen/text12</item>
+        <item name="android:textColor">@color/sdk_pan_text_s4_blue</item>
+    </style>
+
+    <style name="sdk_pan_text_s5_black_bold" parent="sdk_pan_font_gotham_bold">
+        <item name="android:textSize">@dimen/text16</item>
+        <item name="android:textColor">@color/sdk_pan_text_s5_black</item>
+        <item name="autoSizeMaxTextSize">@dimen/text16</item>
+        <item name="autoSizeMinTextSize">@dimen/text14</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizeStepGranularity">1sp</item>
+    </style>
+
+    <style name="sdk_pan_text_s5_black_regular" parent="sdk_pan_font_gotham_book">
+        <item name="android:textSize">@dimen/text16</item>
+        <item name="android:textColor">@color/sdk_pan_text_s5_black</item>
+        <item name="autoSizeMaxTextSize">@dimen/text16</item>
+        <item name="autoSizeMinTextSize">@dimen/text14</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizeStepGranularity">1sp</item>
+    </style>
+
+    <style name="sdk_pan_text_b1" parent="sdk_pan_font_tusker_grotesk_bold">
+        <item name="android:textSize">@dimen/text16</item>
+        <item name="android:textColor">@color/sdk_pan_text_b1</item>
+    </style>
+
+    <style name="sdk_pan_text_b2" parent="sdk_pan_font_gotham_book">
+        <item name="android:textSize">@dimen/text16</item>
+        <item name="android:textColor">@color/sdk_pan_text_b1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SDKIQSECCardTextH3" parent="sdk_pan_text_b2">
+
+    </style>
+
+    <style name="sdk_pan_text_bu1" parent="sdk_pan_font_gotham_bold">
+        <item name="android:textSize">@dimen/text16</item>
+        <item name="android:textColor">@color/sdk_pan_text_bu1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="sdk_pan_btn_blue_gradient" parent="sdk_pan_text_bu1">
+        <item name="android:layout_height">@dimen/dimen48</item>
+        <item name="android:background">@drawable/sdk_pan_style_button_gradient</item>
+        <item name="android:textColor">@color/sdk_wfc_white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="sdk_pan_btn_white" parent="sdk_pan_text_bu1">
+        <item name="android:layout_height">@dimen/dimen48</item>
+        <item name="android:background">@drawable/sdk_pan_button_white</item>
+        <item name="android:textColor">@color/sdk_pan_text_btn_white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="sdk_pan_input_text_01" parent="sdk_pan_font_montserrat_medium">
+        <item name="android:textColor">@color/sdk_pan_text_b1</item>
+        <item name="android:textColorHint">@color/sdk_pan_input_text_hint_gray</item>
+        <item name="android:textSize">@dimen/text14</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="sdk_pan_text_input_01">
+        <item name="boxStrokeColor">@color/sdk_pan_input_layout_stroke</item>
+        <item name="boxBackgroundColor">@color/sdk_wfc_white</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/dimen8</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/dimen8</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/dimen8</item>
+        <item name="boxCornerRadiusTopStart">@dimen/dimen8</item>
+        <item name="android:textColor">@color/sdk_pan_text_b1</item>
+        <item name="android:textColorHint">@color/sdk_pan_input_text_hint_gray</item>
+    </style>
+
+    <style name="sdk_pan_radiobutton" parent="Widget.Material3.CompoundButton.RadioButton">
+        <item name="android:fontFamily">@font/gotham_black</item>
+        <item name="android:textSize">@dimen/text16</item>
+        <item name="android:textColor">@color/sdk_wfc_black</item>
+        <item name="buttonTint">@color/sdk_pan_radio_tint</item>
+        <item name="android:background">@drawable/alert_rounded_white</item>
+    </style>
+
+    <style name="sdk_pan_radiobutton_transparent">
+        <item name="android:fontFamily">@font/gotham_book</item>
+        <item name="android:textSize">@dimen/text16</item>
+        <item name="android:textColor">@color/sdk_wfc_black</item>
+        <item name="buttonTint">@color/sdk_pan_radio_tint</item>
+    </style>
+
+
+    <style name="sdk_iqsec_textTitle" parent="sdk_pan_text_b2">
+    </style>
+
+    <style name="SDKIQSECTimerText">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/dimen8</item>
+        <item name="android:background">@drawable/timer_background</item>
+        <item name="android:paddingStart">@dimen/dimen8</item>
+        <item name="android:paddingEnd">@dimen/dimen8</item>
+        <item name="android:paddingTop">@dimen/dimen6</item>
+        <item name="android:paddingBottom">@dimen/dimen6</item>
+        <item name="android:textColor">@color/sdk_wfc_white</item>>
+        <item name="android:textSize">@dimen/sdkIQSECTextBody</item>
+        <item name="android:fontFamily">@font/gotham_book</item>
+    </style>
+
+    <style name="sdk_pan_dialog_fullscreen">
+        <item name="android:windowBackground">@drawable/gradient_pan_blue</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="sdk_pan_dialog_fullscreen_back">
+        <item name="android:windowBackground">@drawable/gradient_black_transparent</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="sdk_pan_spinner">
+        <item name="android:textAppearance">@style/sdk_pan_text_s3_blue</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/sdk_pan_spinner_gradient</item>
+        <item name="android:popupBackground">@drawable/abc_popup_background_mtrl_mult</item>
+        <item name="android:dropDownSelector">?attr/listChoiceBackgroundIndicator</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">left|start|center_vertical</item>
+        <item name="overlapAnchor">true</item>
+    </style>
+</resources>

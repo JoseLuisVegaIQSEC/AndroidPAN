@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sdk_wfc_blue_text">#47eaf9</color>
+
+    <color name="sdk_wfc_white">#FFFFFFFF</color>
+    <color name="sdk_wfc_black">#FF000000</color>
+
+    <color name="sdk_wfc_gradient_color_1">#2e425f</color>
+    <color name="sdk_wfc_gradient_color_2">#0b2144</color>
+    <color name="sdk_wfc_transparent">#00FFFFFF</color>
+
+    <color name="sdk_iqsec_status_bar">#053F6C</color>
+
+    <color name="sdk_pan_g_c1">#006BD2</color>
+    <color name="sdk_pan_g_c2">#092C75</color>
+    <color name="sdk_pan_text_h3">#27357E</color>
+    <color name="sdk_pan_text_s1">#575756</color>
+    <color name="sdk_pan_text_b1">#575756</color>
+    <color name="sdk_pan_text_bu1">#F5F5F5</color>
+    <color name="sdk_pan_section_sign">#EAEBF3</color>
+    <color name="sdk_pan_btn_blue">#0743D7</color>
+    <color name="sdk_pan_radiobtn_blue">#2288E4</color>
+    <color name="sdk_pan_text_h3_blue">#253775</color>
+    <color name="sdk_pan_text_h2_blue">#27357E</color>
+    <color name="sdk_pan_text_h4_blue">#01066F</color>
+    <color name="sdk_pan_text_s4_blue">#27357E</color>
+    <color name="sdk_pan_text_s5_black">#000000</color>
+    <color name="sdk_pan_text_h8_black">#1E1E1E</color>
+    <color name="sdk_pan_input_text_gray">#E8E8E8</color>
+    <color name="sdk_pan_input_text_hint_gray">#B3B3B3</color>
+    <color name="sdk_pan_btn_disabled_text">#B3B3B3</color>
+    <color name="sdk_pan_text_btn_white">#0743D7</color>
+    <color name="sdk_pan_btn_disabled">#D9D9D9</color>
+    <color name="sdk_pan_welcome_blue">#2288E4</color>
+    <color name="sdk_pan_nav_blue">#27357E</color>
+    <color name="sdk_pan_toolbar_blue">#0043A1</color>
+    <color name="sdk_pan_btn_gradient_blue_1">#01066F</color>
+    <color name="sdk_pan_btn_gradient_blue_2">#0067D8</color>
+    <color name="sdk_pan_card_gray">#F9F8FC</color>
+    <color name="sdk_pan_color_gradient_blue_1">#18327D</color>
+    <color name="sdk_pan_color_gradient_blue_2">#2E4CA3</color>
+</resources>

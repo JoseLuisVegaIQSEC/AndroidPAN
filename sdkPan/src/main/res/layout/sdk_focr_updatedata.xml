@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".presentation.sdk_user_update_info.SDK_FOCR_UpdateData">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="item"
+            type="mx.com.iqsec.sdkpan.domain.model.UserINEModel" />
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimen8"
+            android:background="@drawable/sdk_pan_card_gray"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sdkCaptureBackCLContent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen8"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/takeBackINEtxtTitle"
+                            style="@style/sdk_pan_title_blue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sdk_pan_f_update_data_txt_update_data"
+                            android:textAllCaps="true"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/takeBackINEtxtSubTitle"
+                            style="@style/sdk_pan_text_b2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen30"
+                            android:text="@string/sdk_pan_f_update_data_txt_update_data_instructions"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/takeBackINEtxtTitle" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/dimen8"
+                            android:layout_marginVertical="@dimen/dimen24"
+                            android:background="@drawable/sdk_pan_card_white"
+                            android:elevation="@dimen/dimen12"
+                            android:padding="@dimen/dimen8"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/takeBackINEtxtSubTitle">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="@dimen/dimen24"
+                                android:orientation="vertical"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/sdk_pan_text_h8_black"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start"
+                                        android:text="@string/sdk_pan_f_update_data_txt_name" />
+
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/sdkPanOCRCOmpleteDataTIName"
+                                        style="@style/sdk_pan_text_input_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        app:hintEnabled="false">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/sdkPanOCRCOmpleteDataETName"
+                                            style="@style/sdk_pan_input_text_01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/dimen40"
+                                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑ "
+                                            android:drawableEnd="@drawable/ic_pencil"
+                                            android:hint="@string/sdk_pan_f_update_data_txt_name_hint"
+                                            android:imeOptions="actionDone"
+                                            android:inputType="textCapCharacters"
+                                            android:singleLine="true"
+                                            android:maxLength="50"
+                                            android:padding="@dimen/dimen8"
+                                            android:text="@{item.nombres}">
+
+                                        </com.google.android.material.textfield.TextInputEditText>
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen16"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/sdk_pan_text_h8_black"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start"
+                                        android:text="@string/sdk_pan_f_update_data_txt_first_name" />
+
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/sdkPanOCRCOmpleteDataTIFirstName"
+                                        style="@style/sdk_pan_text_input_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        app:hintEnabled="false">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/sdkPanOCRCOmpleteDataETFirstName"
+                                            style="@style/sdk_pan_input_text_01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/dimen40"
+                                            android:layout_marginTop="@dimen/dimen4"
+                                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑ "
+                                            android:drawableEnd="@drawable/ic_pencil"
+                                            android:gravity="center_vertical"
+                                            android:hint="APELLIDO PATERNO"
+                                            android:imeOptions="actionDone"
+                                            android:inputType="textCapCharacters"
+                                            android:maxLength="50"
+                                            android:maxLines="1"
+                                            android:padding="@dimen/dimen8"
+                                            android:paddingHorizontal="@dimen/dimen16"
+                                            android:singleLine="true"
+                                            android:text="@{item.primerApellido}" />
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen16"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/sdk_pan_text_h8_black"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start"
+                                        android:text="@string/sdk_pan_f_update_data_txt_last_name" />
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/sdkPanOCRCOmpleteDataTILastName"
+                                        style="@style/sdk_pan_text_input_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        app:hintEnabled="false">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/sdkPanOCRCOmpleteDataETLastName"
+                                            style="@style/sdk_pan_input_text_01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/dimen40"
+                                            android:layout_marginTop="@dimen/dimen4"
+                                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑ "
+                                            android:drawableEnd="@drawable/ic_pencil"
+                                            android:gravity="center_vertical"
+                                            android:hint="APELLIDO MATERNO"
+                                            android:imeOptions="actionDone"
+                                            android:inputType="textCapCharacters"
+                                            android:maxLength="50"
+                                            android:padding="@dimen/dimen8"
+                                            android:paddingHorizontal="@dimen/dimen16"
+                                            android:singleLine="true"
+                                            android:text="@{item.segundoApellido}" />
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen16"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/sdk_pan_text_h8_black"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start"
+                                        android:text="@string/sdk_pan_f_update_data_txt_elector_key" />
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/sdkPanOCRCOmpleteDataTIElectorKey"
+                                        style="@style/sdk_pan_text_input_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        android:enabled="false"
+                                        app:hintEnabled="false">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/sdkPanOCRCOmpleteDataETElectorKey"
+                                            style="@style/sdk_pan_input_text_01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/dimen40"
+                                            android:layout_marginTop="@dimen/dimen4"
+                                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑ0123456789 "
+                                            android:gravity="center_vertical"
+                                            android:hint=""
+                                            android:maxLength="18"
+                                            android:imeOptions="actionDone"
+                                            android:inputType="textCapCharacters"
+                                            android:padding="@dimen/dimen8"
+                                            android:paddingHorizontal="@dimen/dimen16"
+                                            android:singleLine="true"
+                                            android:text="@{item.claveElector}" />
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen16"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/sdk_pan_text_h8_black"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start"
+                                        android:text="@string/sdk_pan_f_update_data_txt_curp" />
+
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/sdkPanOCRCOmpleteDataTIECurp"
+                                        style="@style/sdk_pan_text_input_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        android:enabled="false"
+                                        app:hintEnabled="false">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/sdkPanOCRCOmpleteDataETECurp"
+                                            style="@style/sdk_pan_input_text_01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/dimen40"
+                                            android:layout_marginTop="@dimen/dimen4"
+                                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑ0123456789 "
+                                            android:gravity="center_vertical"
+                                            android:hint=""
+                                            android:maxLength="18"
+                                            android:imeOptions="actionDone"
+                                            android:inputType="textCapCharacters|textEmailAddress"
+                                            android:padding="@dimen/dimen8"
+                                            android:paddingHorizontal="@dimen/dimen16"
+                                            android:singleLine="true"
+                                            android:text="@{item.curp}" />
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen16"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/sdk_pan_text_h8_black"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start"
+                                        android:text="@string/sdk_pan_f_update_data_txt_emision" />
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/sdkPanOCRCOmpleteDataTINoEmission"
+                                        style="@style/sdk_pan_text_input_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        app:hintEnabled="false">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/sdkPanOCRCOmpleteDataETNoEmission"
+                                            style="@style/sdk_pan_input_text_01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/dimen40"
+                                            android:layout_marginTop="@dimen/dimen4"
+                                            android:digits="0123456789"
+                                            android:drawableEnd="@drawable/ic_pencil"
+                                            android:gravity="center_vertical"
+                                            android:hint="@string/sdk_pan_f_update_data_txt_emision_hint"
+                                            android:imeOptions="actionDone"
+                                            android:inputType="number"
+                                            android:maxLength="4"
+                                            android:padding="@dimen/dimen8"
+                                            android:paddingHorizontal="@dimen/dimen16"
+                                            android:singleLine="true"
+                                            android:text="@{item.emision}" />
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen16"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/sdk_pan_text_h8_black"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start"
+                                        android:text="@string/sdk_pan_f_update_data_txt_register" />
+
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/sdkPanOCRCOmpleteDataTINoRegister"
+                                        style="@style/sdk_pan_text_input_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        app:hintEnabled="false">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/sdkPanOCRCOmpleteDataETNoRegister"
+                                            style="@style/sdk_pan_input_text_01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/dimen40"
+                                            android:layout_marginTop="@dimen/dimen4"
+                                            android:digits="0123456789 "
+                                            android:drawableEnd="@drawable/ic_pencil"
+                                            android:gravity="center_vertical"
+                                            android:hint="@string/sdk_pan_f_update_data_txt_register_hint"
+                                            android:imeOptions="actionDone"
+                                            android:inputType="number"
+                                            android:maxLength="7"
+                                            android:padding="@dimen/dimen8"
+                                            android:paddingHorizontal="@dimen/dimen16"
+                                            android:singleLine="true"
+                                            android:text="@{item.registro}" />
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen16"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/sdk_pan_text_h8_black"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start"
+                                        android:text="@string/sdk_pan_f_update_data_txt_street" />
+
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/sdkPanOCRCOmpleteDataTICalle"
+                                        style="@style/sdk_pan_text_input_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        app:hintEnabled="false">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            style="@style/sdk_pan_input_text_01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/dimen40"
+                                            android:layout_marginTop="@dimen/dimen4"
+                                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑ0123456789 "
+                                            android:drawableEnd="@drawable/ic_pencil"
+                                            android:gravity="center_vertical"
+                                            android:hint="@string/sdk_pan_f_update_data_txt_street_hint"
+                                            android:imeOptions="actionDone"
+                                            android:inputType="textCapCharacters"
+                                            android:padding="@dimen/dimen8"
+                                            android:paddingHorizontal="@dimen/dimen16"
+                                            android:singleLine="true"
+                                            android:text="@{item.cleanCalle}" />
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen16"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/sdk_pan_text_h8_black"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start"
+                                        android:text="@string/sdk_pan_f_update_data_txt_exterior" />
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/sdkPanOCRCOmpleteDataTINoExterior"
+                                        style="@style/sdk_pan_text_input_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        app:hintEnabled="false">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            style="@style/sdk_pan_input_text_01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/dimen40"
+                                            android:layout_marginTop="@dimen/dimen4"
+                                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑ0123456789 /"
+                                            android:drawableEnd="@drawable/ic_pencil"
+                                            android:gravity="center_vertical"
+                                            android:hint="@string/sdk_pan_f_update_data_txt_exterior_hint"
+                                            android:imeOptions="actionDone"
+                                            android:inputType="textCapCharacters"
+                                            android:padding="@dimen/dimen8"
+                                            android:paddingHorizontal="@dimen/dimen16"
+                                            android:singleLine="true"
+                                            android:text="@{item.calculateNoExterior}" />
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen16"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/sdk_pan_text_h8_black"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start"
+                                        android:text="@string/sdk_pan_f_update_data_txt_interior" />
+
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/sdkPanOCRCOmpleteDataTINoInterior"
+                                        style="@style/sdk_pan_text_input_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        app:hintEnabled="false">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            style="@style/sdk_pan_input_text_01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/dimen40"
+                                            android:layout_marginTop="@dimen/dimen4"
+                                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑ0123456789 "
+                                            android:drawableEnd="@drawable/ic_pencil"
+                                            android:gravity="center_vertical"
+                                            android:hint="@string/sdk_pan_f_update_data_txt_interior_hint"
+                                            android:imeOptions="actionDone"
+                                            android:inputType="textCapCharacters"
+                                            android:padding="@dimen/dimen8"
+                                            android:paddingHorizontal="@dimen/dimen16"
+                                            android:singleLine="true"
+                                            android:text="@{item.calculateNoInterior}" />
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen16"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/sdk_pan_text_h8_black"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start"
+                                        android:text="@string/sdk_pan_f_update_data_txt_colony" />
+
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/sdkPanOCRCOmpleteDataTIColonia"
+                                        style="@style/sdk_pan_text_input_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        app:hintEnabled="false">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            style="@style/sdk_pan_input_text_01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/dimen40"
+                                            android:layout_marginTop="@dimen/dimen4"
+                                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑ0123456789 "
+                                            android:drawableEnd="@drawable/ic_pencil"
+                                            android:gravity="center_vertical"
+                                            android:hint="@string/sdk_pan_f_update_data_txt_colony_hint"
+                                            android:imeOptions="actionDone"
+                                            android:inputType="textCapCharacters"
+                                            android:padding="@dimen/dimen8"
+                                            android:paddingHorizontal="@dimen/dimen16"
+                                            android:singleLine="true"
+                                            android:text="@{item.cleanColonia}" />
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen16"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/sdk_pan_text_h8_black"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start"
+                                        android:text="@string/sdk_pan_f_update_data_txt_state" />
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/sdkPanOCRCOmpleteDataTIEState"
+                                            style="@style/sdk_pan_text_input_01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/dimen4"
+                                            app:hintEnabled="false"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent">
+
+                                            <Spinner
+                                                android:id="@+id/sdkPanOCRCOmpleteDataETEState"
+                                                style="@style/sdk_pan_spinner"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/dimen40"
+                                                android:gravity="center_vertical"
+                                                android:hint="@string/sdk_pan_f_update_data_txt_state_hint"
+                                                android:popupBackground="@color/sdk_wfc_white"
+                                                android:spinnerMode="dropdown" />
+
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@color/sdk_capture_ine_gray"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent">
+
+                                            <ProgressBar
+                                                android:id="@+id/sdkPanOCRCOmpleteDataLoadingState"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:indeterminateDrawable="@drawable/sdk_pan_spinner_loading"
+                                                android:visibility="gone"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent" />
+
+                                        </LinearLayout>
+
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen16"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/sdk_pan_text_h8_black"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start"
+                                        android:text="@string/sdk_pan_f_update_data_txt_postal_code" />
+
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/sdkPanOCRCOmpleteDataTICodPostal"
+                                        style="@style/sdk_pan_text_input_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        app:hintEnabled="false">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            style="@style/sdk_pan_input_text_01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/dimen40"
+                                            android:layout_marginTop="@dimen/dimen4"
+                                            android:digits="0123456789"
+                                            android:drawableEnd="@drawable/ic_pencil"
+                                            android:gravity="center_vertical"
+                                            android:hint="@string/sdk_pan_f_update_data_txt_postal_code_hint"
+                                            android:imeOptions="actionDone"
+                                            android:inputType="number"
+                                            android:maxLength="5"
+                                            android:padding="@dimen/dimen8"
+                                            android:paddingHorizontal="@dimen/dimen16"
+                                            android:singleLine="true"
+                                            android:text="@{item.calculateCodigoPostal()}" />
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginVertical="@dimen/dimen16"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/sdk_pan_text_h8_black"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start"
+                                        android:text="@string/sdk_pan_f_update_data_txt_municipality" />
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <com.google.android.material.textfield.TextInputLayout
+                                            android:id="@+id/sdkPanOCRCOmpleteDataTIEMunicipality"
+                                            style="@style/sdk_pan_text_input_01"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/dimen4"
+                                            app:hintEnabled="false"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent">
+
+                                            <androidx.constraintlayout.widget.ConstraintLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@color/sdk_capture_ine_gray"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent">
+
+                                                <Spinner
+                                                    android:id="@+id/sdkPanOCRCOmpleteDataETEMunicipality"
+                                                    style="@style/sdk_pan_spinner"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="@dimen/dimen40"
+                                                    android:gravity="center_vertical"
+                                                    android:popupBackground="@color/sdk_wfc_white"
+                                                    android:text="@string/sdk_pan_f_update_data_txt_municipality_hint"
+                                                    app:layout_constraintBottom_toBottomOf="parent"
+                                                    app:layout_constraintEnd_toEndOf="parent"
+                                                    app:layout_constraintStart_toStartOf="parent"
+                                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@color/sdk_capture_ine_gray"
+                                                    app:layout_constraintBottom_toBottomOf="@+id/sdkPanOCRCOmpleteDataETEMunicipality"
+                                                    app:layout_constraintEnd_toEndOf="@+id/sdkPanOCRCOmpleteDataETEMunicipality"
+                                                    app:layout_constraintStart_toStartOf="@+id/sdkPanOCRCOmpleteDataETEMunicipality"
+                                                    app:layout_constraintTop_toTopOf="@+id/sdkPanOCRCOmpleteDataETEMunicipality">
+
+                                                    <ProgressBar
+                                                        android:id="@+id/sdkPanOCRCOmpleteDataLoadingMunipalities"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:indeterminateDrawable="@drawable/sdk_pan_spinner_loading"
+                                                        android:visibility="gone"
+                                                        app:layout_constraintBottom_toBottomOf="parent"
+                                                        app:layout_constraintEnd_toEndOf="parent"
+                                                        app:layout_constraintStart_toStartOf="parent"
+                                                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                                                </LinearLayout>
+                                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                        </com.google.android.material.textfield.TextInputLayout>
+
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+                                </LinearLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/sdkCaptureBackCLButtons"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent">
+
+                                    <androidx.appcompat.widget.AppCompatButton
+                                        android:id="@+id/btn_enter"
+                                        style="@style/sdk_pan_btn_blue_gradient"
+                                        android:layout_width="match_parent"
+                                        android:text="@string/lbl_continue"
+                                        app:layout_constraintBottom_toTopOf="@+id/sdkPanOCRCOmpleteDataBtnRetakeINE"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <androidx.appcompat.widget.AppCompatButton
+                                        android:id="@+id/sdkPanOCRCOmpleteDataBtnRetakeINE"
+                                        style="@style/sdk_pan_btn_white"
+                                        android:layout_width="match_parent"
+                                        android:layout_marginTop="@dimen/dimen16"
+                                        android:text="@string/sdk_pan_f_update_data_txt_recapture"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@+id/btn_enter" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</layout>

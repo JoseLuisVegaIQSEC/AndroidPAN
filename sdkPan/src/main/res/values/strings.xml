@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Strings for camera settings. -->
+
+    <!-- Strings for face detector landmark mode preference. -->
+
+    <!-- Strings for face detector contour mode preference. -->
+
+    <!-- Strings for face detector classification mode preference. -->
+
+    <!-- Strings for face detector performance mode preference. -->
+
+    <!-- Strings for face detector face tracking preference. -->
+
+    <!-- Strings for face detector min face size preference. -->
+
+    <!-- Strings for pose detector prefer gpu preference. -->
+
+    <!-- Strings for pose detector showInFrameLikelihood preference. -->
+
+    <!-- Strings for pose detector z value visualization preference. -->
+
+    <!-- Strings for pose classification preference. -->
+
+    <!-- Strings for segmentation preference. -->
+
+    <string name="errorOnPause" translatable="true">El usuario salio de la prueba de vida</string>
+
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="txt_success_validation">Identidad válida</string>
+    <string name="txt_cancel_by_user">Cancelado por usuario</string>
+    <string name="txt_app_time_out">Tiempo agotado</string>
+    <string name="raw_espereUnMomentoPorFavor">Estamos validando la información…</string>
+
+    <!-- Strings used for fragments for Error -->
+
+    <!-- Strings used for main activity -->
+    <string name="sdk_ma_time_left">Dispones de %1$d segundos para concluir tu validación de identidad</string>
+    <string name="sdk_ma_time_expire"> El tiempo para completar el registro ha finalizado. Para continuar, inicia nuevamente desde la página principal.</string>
+    <string name="sdk_ma_acept">Aceptar</string>
+    <string name="sdk_da_time_out_body">La validación de identidad debe completarse dentro del tiempo indicado de 10 minutos.</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="sdk_pan_f_test_life_notice_title">Prueba de vida, Aviso</string>
+    <string name="sdk_pan_f_test_life_capture_title">Prueba de vida, Captura</string>
+
+    <string name="lbl_service_not_available">Servicio no disponible</string>
+    <string name="lbl_txt_max_attempts_reached">INTENTOS SUPERADOS.</string>
+    <string name="lbl_something_wrong">Algo salió mal</string>
+    <string name="sdk_pan_antispoffing_error_validation">Error en la validación</string>
+    <string name="lbl_retry">Reintentar</string>
+    <string name="lbl_continue">Continuar</string>
+    <string name="lbl_cancel">Cancelar</string>
+    <string name="lbl_close">Cerrar</string>
+
+    <string name="fragment_credential_notice_title">TOMA LA FOTO DE TU IDENTIFICACIÓN DE FORMA HORIZONTAL(ANVERSO Y REVERSO)</string>
+    <string name="fragment_credential_bad_images">Captura una imagen clara y bien enfocada.</string>
+    <string name="sdk_pan_capture_back_txt_vote_id_not_legible">La INE no es legible</string>
+    <string name="sdk_pan_capture_back_txt_vote_id_not_consistent">La INE no es consistente</string>
+    <string name="sdk_pan_capture_back_txt_vote_id_is_not_valid">La INE no es válida</string>
+    <string name="sdk_pan_capture_back_txt_use_the_same_vote_id">Usa la misma INE por ambos lados.</string>
+    <string name="sdk_pan_capture_back_txt_vote_id_not_valid_for_register">El tipo de INE no es válido para este registro.</string>
+    <string name="fragment_credential_bad_credential_type">La imagen no es una Credencial para Votar del INE válida.</string>
+    <string name="fragment_credential_bad_quality_image">La fotografía no es legible. Por favor, inténtalo nuevamente.</string>
+    <string name="validation_ok">Validación satisfactoria</string>
+
+    <string name="sdk_da_location_permision_t1">Por disposición oficial, es necesario que actives la ubicación de tu dispositivo y nos permitas acceder a tu ubicación geográfica.</string>
+    <string name="sdk_da_location_permision_c2">Tus datos serán tratados con la confidencialidad establecida en nuestro</string>
+    <string name="sdk_da_location_permision_c3">Aviso de privacidad</string>
+
+    <string name="txt_fail_validation">No pudimos validar tu identidad. Inténtalo de nuevo.</string>
+
+    <string name="capture_ine_loader">Estamos validando tu documento…</string>
+    <string name="test_life_loader">Estamos validando tu identidad…</string>
+    <string name="ocr_ine_txt_cancel">Si abandonas el proceso en este momento, tendrás que volver a empezar desde el inicio.</string>
+
+    <string name="dialog_txt_close">Cerrar</string>
+    <string name="dialog_txt_si">Si</string>
+    <string name="dialog_txt_no">No</string>
+
+    <string name="data_ine_bad_data_verification">La foto no coincide con el rostro en la foto de tu INE. Inténtalo de nuevo.</string>
+    <string name="data_ine_bad_document">La credencial ingresada no es válida para este trámite.</string>
+
+    <string name="sdk_take_image_front_ine_title">Coloca tu INE dentro del recuadro. La toma se hará de forma automática.</string>
+    <string name="sdk_take_image_back_ine_title">Coloca tu INE dentro del recuadro. La toma se hará de forma automática.</string>
+
+    <string name="sdk_take_ine_txt_continue">Continuar</string>
+    <string name="sdk_take_ine_txt_start">INICIAR CAPTURA</string>
+
+    <string name="sdk_take_image_front_ine_title_take">Captura frente</string>
+    <string name="sdk_take_image_front_ine_subtitle_take">Al iniciar la captura coloca tu INE como se muestra en la imagen.</string>
+    <string name="sdk_take_image_front_ine_title_retake">Verifica tu captura</string>
+    <string name="sdk_take_image_front_ine_subtitle_retake">Revisa que la foto capturada sea legible, nítida y esté dentro del marco.</string>
+
+    <string name="sdk_take_image_back_ine_title_take">Captura REVERSO</string>
+    <string name="sdk_take_image_back_ine_subtitle_take">Al iniciar la captura coloca tu INE como se muestra en la imagen.</string>
+    <string name="sdk_take_image_back_ine_title_retake">Verifica tu captura</string>
+    <string name="sdk_take_image_back_ine_subtitle_retake">Revisa que la foto capturada sea legible, nítida y esté dentro del marco.</string>
+
+    <string name="sdk_take_image_txt_zone">Presiona aquí para volver a capturar</string>
+
+    <string name="sdk_sign_txt_sign_required">Firma antes de continuar</string>
+    <string name="sdk_sign_txt_sign_to_small">Tu firma no cumple con el tamaño requerido. Te pedimos que la realices nuevamente, ocupando más espacio dentro del recuadro</string>
+
+    <string name="sdk_terms_privacy_txt_title_t2">https://transparencia.pan.org.mx/documentos/avisos_privacidad/Aviso_de_Privacidad_Militantes_y_Simpatizantes_del_PAN.pdf</string>
+
+    <string name="sdk_permisions_camera" translatable="true">Es necesario que nos des acceso a la cámara. Esto nos permite validar y completar tu proceso.</string>
+    <string name="sdk_permisions_media" translatable="true">Para proceder con la validación del domicilio, es indispensable que concedas el permiso a archios multimedia</string>
+    <string name="sdk_permisions_geolocation" translatable="true">Es necesario que actives la geolocalización de tu dispositivo y nos permitas acceder a tu ubicación geográfica.</string>
+    <string name="sdk_permisions_activate" translatable="true">Activar</string>
+
+    <string name="sdk_pan_wellcome_privacy"><u>Aviso de privacidad</u></string>
+    <string name="sdk_pan_welcome_terns"><b>Autorizo la recolección y</b> el tratamiento de mi información</string>
+    <string name="sdk_pan_a_pan_afiliate">AFÍLIATE</string>
+    <string name="sdk_pan_a_pan_join_movement">SÚMATE A NUESTRO MOVIMIENTO</string>
+    <string name="sdk_pan_a_pan_txt_affiliation">Afiliación</string>
+    <string name="sdk_pan_loader_txt_one_moment">Un momento, por favor</string>
+    <string name="sdk_pan_d_option_want_go_out">¿Deseas salir?</string>
+    <string name="sdk_pan_d_option_continue_registration">Continuar con el registro</string>
+    <string name="sdk_pan_d_option_go_out">Salir</string>
+    <string name="sdk_pan_test_life_validate_identity">Valida tu identidad</string>
+    <string name="sdk_pan_notice_test_life_validate_identity">Valida tu identidad</string>
+    <string name="sdk_pan_notice_test_life_warning">Para confirmar tu identidad, necesitamos que tomes una foto.</string>
+    <string name="sdk_pan_notice_test_life_tips_photo">Tips para tu foto:</string>
+    <string name="sdk_pan_notice_test_life_good_lighting">Colócate en un lugar con buena iluminación.</string>
+    <string name="sdk_pan_notice_test_life_not_accessories">No uses lentes de sol, gorras o cubrebocas.</string>
+    <string name="sdk_pan_notice_test_life_plain_background">Un fondo liso ayuda a que la cámara te enfoque mejor.</string>
+    <string name="sdk_pan_notice_test_life_take_photo">TOMAR FOTO</string>
+    <string name="sdk_pan_sign_sign_box">Firma en el recuadro</string>
+    <string name="sdk_pan_sign_give_consent">Otorgó mi consentimiento para validar la información proporcionada.</string>
+    <string name="sdk_pan_sign_clean_sign">Limpiar firma</string>
+    <string name="sdk_pan_welcome_choose_role">Elige tu rol</string>
+    <string name="sdk_pan_welcome_militant">Militante</string>
+    <string name="sdk_pan_welcome_foreign_militant">Militante en el extranjero</string>
+    <string name="sdk_pan_welcome_start_registration">Comenzar registro</string>
+    <string name="fragment_credential_notice_warning">Aviso</string>
+    <string name="sdk_pan_d_error_warning">Aviso</string>
+    <string name="fragment_contact_details_txt_contact_details">Datos de contacto</string>
+    <string name="fragment_contact_details_txt_instructions">Ingresa un correo electrónico y un número de teléfono activos.</string>
+    <string name="fragment_contact_details_txt_email">Correo electrónico*</string>
+    <string name="fragment_contact_details_txt_email_hint">INGRESA CORREO ELECTRÓNICO</string>
+    <string name="fragment_contact_details_txt_phone">Número celular (10 dígitos)*</string>
+    <string name="fragment_contact_details_txt_phone_hint">INGRESA NÚMERO CELULAR</string>
+    <string name="fragment_contact_details_txt_aditional_data">Datos adicionales</string>
+    <string name="fragment_contact_details_txt_aditional_data_instructions">Ingresa la siguiente información para conocerte mejor.</string>
+    <string name="fragment_contact_details_txt_schooling">Escolaridad*</string>
+    <string name="fragment_contact_details_txt_speak_any_dialect">¿Hablas algún dialecto?*</string>
+    <string name="fragment_contact_details_txt_yes">Si</string>
+    <string name="fragment_contact_details_txt_no">No</string>
+    <string name="fragment_contact_details_txt_dialect">Ingresa el dialecto*</string>
+    <string name="sdk_pan_f_update_data_txt_update_data">Datos del INE</string>
+    <string name="sdk_pan_f_update_data_txt_update_data_instructions">Verifica tus datos. Si algo no está bien, edita tus datos o sube de nuevo tu INE.</string>
+    <string name="sdk_pan_f_update_data_txt_name">Nombre (s)*</string>
+    <string name="sdk_pan_f_update_data_txt_name_hint">NOMBRE (S)</string>
+    <string name="sdk_pan_f_update_data_txt_first_name">Apellido paterno*</string>
+    <string name="sdk_pan_f_update_data_txt_last_name">Apellido materno*</string>
+    <string name="sdk_pan_f_update_data_txt_elector_key">Clave de elector*</string>
+    <string name="sdk_pan_f_update_data_txt_curp">CURP*</string>
+    <string name="sdk_pan_f_update_data_txt_emision">Año de emisión*</string>
+    <string name="sdk_pan_f_update_data_txt_emision_hint">AÑO DE EMISIÓN</string>
+    <string name="sdk_pan_f_update_data_txt_register">Año de registro*</string>
+    <string name="sdk_pan_f_update_data_txt_register_hint">AÑO DE REGISTRO</string>
+    <string name="sdk_pan_f_update_data_txt_street">Calle*</string>
+    <string name="sdk_pan_f_update_data_txt_street_hint">CALLE</string>
+    <string name="sdk_pan_f_update_data_txt_exterior">No. Exterior*</string>
+    <string name="sdk_pan_f_update_data_txt_exterior_hint">NO. EXTERIOR</string>
+    <string name="sdk_pan_f_update_data_txt_interior">No. Interior (opcional)</string>
+    <string name="sdk_pan_f_update_data_txt_interior_hint">NO. INTERIOR</string>
+    <string name="sdk_pan_f_update_data_txt_colony">Colonia*</string>
+    <string name="sdk_pan_f_update_data_txt_colony_hint">COLONIA</string>
+    <string name="sdk_pan_f_update_data_txt_state">Estado*</string>
+    <string name="sdk_pan_f_update_data_txt_state_hint">ESTADO</string>
+    <string name="sdk_pan_f_update_data_txt_postal_code">Código Postal*</string>
+    <string name="sdk_pan_f_update_data_txt_postal_code_hint">CÓDIGO POSTAL</string>
+    <string name="sdk_pan_f_update_data_txt_municipality">Municipio / Alcaldía*</string>
+    <string name="sdk_pan_f_update_data_txt_municipality_hint">MUNICIPIO / ALCALDÍA</string>
+    <string name="sdk_pan_f_update_data_txt_recapture">Volver a capturar INE</string>
+    <string name="sdk_pan_f_update_data_user_exist_title">¡Ya estás Afiliado/a!</string>
+    <string name="sdk_pan_f_update_data_user_exist_message">Tus datos ya están en nuestro sistema. No necesitas completar un nuevo registro.</string>
+    <string name="sdk_pan_f_update_data_user_exist_my_profile">Ir a mi perfil</string>
+
+    <string name="sdk_pan_f_ocr_complete_txt_capture_complete">Captura completada</string>
+    <string name="sdk_pan_f_ocr_complete_txt_capture_ok">Tu INE se ha capturado correctamente.</string>
+    <string name="sdk_pan_f_proof_txt_attach_receipt">Adjunta tu Comprobante de Domicilio</string>
+    <string name="sdk_pan_f_proof_txt_attach_instructions">Selecciona una opción y carga un recibo no mayor a 3 meses de antigüedad.</string>
+    <string name="sdk_pan_f_proof_txt_choose_file">Selecciona tu archivo</string>
+    <string name="sdk_pan_f_proof_txt_restrictions">Formato PDF, JPG o PNG menor a 3 MB</string>
+    <string name="sdk_pan_f_proof_txt_continue">Continuar</string>
+    <string name="sdk_pan_f_proof_tel_txt_attach_receipt">Adjunta tu Comprobante de Domicilio</string>
+    <string name="sdk_pan_f_proof_tel_txt_instructions">Carga un recibo de luz, agua o teléfono, no mayor a 3 meses de antigüedad.</string>
+    <string name="sdk_pan_f_proof_tel_txt_choose_file">Selecciona tu archivo</string>
+    <string name="sdk_pan_f_proof_tel_txt_restrictions">Formato PDF, JPG o PNG menor a 3 MB</string>
+    <string name="sdk_pan_f_proof_tel_txt_continue">Continuar</string>
+    <string name="sdk_pan_f_social_network_txt_social_network">Redes sociales (opcionales)</string>
+    <string name="sdk_pan_f_social_network_txt_instructions">Queremos estar más cerca de ti. Agrega tus redes sociales para mantenernos conectados.</string>
+    <string name="sdk_pan_f_social_network_txt_facebook">Facebook</string>
+    <string name="sdk_pan_f_social_network_txt_put_user_hint">INGRESA TU USUARIO</string>
+    <string name="sdk_pan_f_social_network_txt_instagram">Instagram</string>
+    <string name="sdk_pan_f_social_network_txt_tik">Tik Tok</string>
+    <string name="sdk_pan_f_social_network_txt_twi">X</string>
+    <string name="sdk_pan_f_social_network_txt_skip">Omitir</string>
+    <string name="sdk_pan_f_credential_txt_names">Nombres (s)</string>
+    <string name="sdk_pan_f_credential_txt_last_names">Apellidos</string>
+    <string name="sdk_pan_f_credential_txt_state">Estado</string>
+    <string name="sdk_pan_f_credential_txt_municipality">Municipio/Alcaldía</string>
+    <string name="sdk_pan_f_credential_txt_share_profile">Comparte tu perfil</string>
+    <string name="sdk_pan_f_credential_txt_folio">Folio</string>
+    <string name="sdk_pan_f_credential_txt_register_date">Fecha de registro</string>
+    <string name="sdk_pan_f_credential_txt_name">Jaime Isael Mata Salas</string>
+    <string name="sdk_pan_f_credential_txt_entity">Dirección del Registro Nacional de Militantes</string>
+    <string name="sdk_pan_f_credential_txt_last_name_format">%1$s %2$s</string>
+    <string name="sdk_pan_f_interests_txt_choose_interest">Selecciona tus áreas de interés</string>
+    <string name="sdk_pan_f_interests_txt_instructions">Selecciona las actividades que más te interesen o sobre las que deseas recibir más información.</string>
+    <string name="sdk_pan_f_interests_txt_continue">Continuar</string>
+    <string name="sdk_pan_f_did_it_txt_did_it">¡Lo lograste!</string>
+    <string name="sdk_pan_f_did_it_txt_process_finish">Concluiste tu proceso de afiliación de manera exitosa.</string>
+    <string name="sdk_pan_f_did_it_txt_invite">Te invitamos a consultar los siguientes recursos para realizar actividades y obtener tu militancia activa.</string>
+    <string name="sdk_pan_f_did_it_txt_finish">Finalizar</string>
+    <string name="sdk_pan_f_capture_txt_vote_id">Ten tu credencial para votar a la mano</string>
+    <string name="sdk_pan_f_capture_txt_instructions">Captura tu INE por ambos lados.</string>
+    <string name="sdk_pan_f_capture_txt_tips_capture">Tips para la captura:</string>
+    <string name="sdk_pan_f_capture_txt_flat_surface">Coloca tu INE sobre una superficie plana.</string>
+    <string name="sdk_pan_f_capture_txt_crisp_text">Asegúrate de tener buena iluminación y que el texto se vea nítido.</string>
+    <string name="sdk_pan_f_capture_txt_no_shadow">Evita que la sombra de tu mano o tu teléfono cubran tu INE.</string>
+    <string name="sdk_pan_f_capture_txt_continue">Continuar</string>
+    <string name="fragment_contact_details_txt_dialect_hint">INGRESA EL DIALECTO</string>
+
+    <string name="fragment_dialog_network_title">Sin conexión a Internet</string>
+    <string name="fragment_dialog_network_message">Revisa tu red y vuelve a intentarlo para seguir con el proceso.</string>
+    <string name="fragment_dialog_network_button">Reintentar</string>
+    <string name="sdk_pan_f_antispoffing_ok_txt_identity_ok">Identidad validada</string>
+    <string name="sdk_pan_f_antispoffing_ok_txt_image_ok">Tu foto se tomó correctamente.</string>
+</resources>

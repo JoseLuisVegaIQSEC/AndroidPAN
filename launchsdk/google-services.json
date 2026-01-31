@@ -1,0 +1,200 @@
+{
+  "project_info": {
+    "project_number": "934021254088",
+    "project_id": "journey-comercial",
+    "storage_bucket": "journey-comercial.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934021254088:android:07c7f445a95b782c15cefd",
+        "android_client_info": {
+          "package_name": "iqsec.com.mx.demo.fingerdemo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZAy1NtCmNPkmHEyWhYVepAfBCyynQqUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934021254088:android:94ea3c7ce932573815cefd",
+        "android_client_info": {
+          "package_name": "mx.com.iqsec.app_cif"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZAy1NtCmNPkmHEyWhYVepAfBCyynQqUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934021254088:android:d7b8eb28067611dd15cefd",
+        "android_client_info": {
+          "package_name": "mx.com.iqsec.demo_passport"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZAy1NtCmNPkmHEyWhYVepAfBCyynQqUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934021254088:android:3367cabb99de905715cefd",
+        "android_client_info": {
+          "package_name": "mx.com.iqsec.journey"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZAy1NtCmNPkmHEyWhYVepAfBCyynQqUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934021254088:android:0d12824c9274e64315cefd",
+        "android_client_info": {
+          "package_name": "mx.com.iqsec.launchsdk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZAy1NtCmNPkmHEyWhYVepAfBCyynQqUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934021254088:android:409c9f652467ddee15cefd",
+        "android_client_info": {
+          "package_name": "mx.com.iqsec.rostrocpvvideofirma"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZAy1NtCmNPkmHEyWhYVepAfBCyynQqUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934021254088:android:a8c136e74746bf0715cefd",
+        "android_client_info": {
+          "package_name": "mx.com.iqsec.sdk_cetes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZAy1NtCmNPkmHEyWhYVepAfBCyynQqUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934021254088:android:3bb1e4e552bad6d615cefd",
+        "android_client_info": {
+          "package_name": "mx.com.iqsec.test_sdk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZAy1NtCmNPkmHEyWhYVepAfBCyynQqUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934021254088:android:6bb1bba7c907f96a15cefd",
+        "android_client_info": {
+          "package_name": "mx.com.iqsec.videosignature"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZAy1NtCmNPkmHEyWhYVepAfBCyynQqUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934021254088:android:f7f6b21766ba05df15cefd",
+        "android_client_info": {
+          "package_name": "mx.com.iqsec.videostatement"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZAy1NtCmNPkmHEyWhYVepAfBCyynQqUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

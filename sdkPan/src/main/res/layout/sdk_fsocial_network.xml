@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.sdk_social.SDK_FSocialNetwork">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen24"
+        android:background="@drawable/sdk_pan_card_gray"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/sdkCaptureBackCLContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="@dimen/dimen16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/noticeHSTop">
+
+                    <TextView
+                        android:id="@+id/sdkPanSocialNetworkTxtTitle"
+                        style="@style/sdk_pan_title_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sdk_pan_f_social_network_txt_social_network"
+                        android:textAllCaps="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/sdkPanSocialNetworkSubtitle"
+                        style="@style/sdk_pan_text_b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen30"
+                        android:text="@string/sdk_pan_f_social_network_txt_instructions"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sdkPanSocialNetworkTxtTitle" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/sdkPanSocialNetworkCardCL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dimen8"
+                        android:layout_marginVertical="@dimen/dimen24"
+                        android:background="@drawable/sdk_pan_card_white"
+                        android:elevation="@dimen/dimen12"
+                        android:paddingHorizontal="@dimen/dimen8"
+                        android:paddingVertical="@dimen/dimen16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sdkPanSocialNetworkSubtitle">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/sdk_pan_text_h8_black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="@string/sdk_pan_f_social_network_txt_facebook" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/sdkPanSocialNetworkTIFacebook"
+                                    style="@style/sdk_pan_text_input_01"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen4"
+                                    app:hintEnabled="false">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        style="@style/sdk_pan_input_text_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dimen40"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        android:gravity="center_vertical"
+                                        android:hint="@string/sdk_pan_f_social_network_txt_put_user_hint"
+                                        android:imeOptions="actionDone"
+                                        android:inputType="textUri"
+                                        android:maxLength="50"
+                                        android:maxLines="1"
+                                        android:padding="@dimen/dimen8"
+                                        android:paddingHorizontal="@dimen/dimen16"
+                                        android:singleLine="true" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dimen16"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/sdk_pan_text_h8_black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="@string/sdk_pan_f_social_network_txt_instagram" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/sdkPanSocialNetworkTIInstagram"
+                                    style="@style/sdk_pan_text_input_01"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen4"
+                                    app:hintEnabled="false">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        style="@style/sdk_pan_input_text_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dimen40"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        android:gravity="center_vertical"
+                                        android:hint="@string/sdk_pan_f_social_network_txt_put_user_hint"
+                                        android:imeOptions="actionDone"
+                                        android:inputType="textUri"
+                                        android:maxLength="50"
+                                        android:maxLines="1"
+                                        android:padding="@dimen/dimen8"
+                                        android:paddingHorizontal="@dimen/dimen16"
+                                        android:singleLine="true" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dimen16"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/sdk_pan_text_h8_black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="@string/sdk_pan_f_social_network_txt_tik" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/sdkPanSocialNetworkTITikTok"
+                                    style="@style/sdk_pan_text_input_01"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen4"
+                                    app:counterMaxLength="50"
+                                    app:hintEnabled="false">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        style="@style/sdk_pan_input_text_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dimen40"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        android:gravity="center_vertical"
+                                        android:hint="@string/sdk_pan_f_social_network_txt_put_user_hint"
+                                        android:imeOptions="actionDone"
+                                        android:inputType="textUri"
+                                        android:maxLength="50"
+                                        android:maxLines="1"
+                                        android:padding="@dimen/dimen8"
+                                        android:paddingHorizontal="@dimen/dimen16"
+                                        android:singleLine="true" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dimen16"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/sdk_pan_text_h8_black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="@string/sdk_pan_f_social_network_txt_twi" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/sdkPanSocialNetworkTITwitter"
+                                    style="@style/sdk_pan_text_input_01"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen4"
+                                    app:counterMaxLength="50"
+                                    app:hintEnabled="false">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        style="@style/sdk_pan_input_text_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dimen40"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        android:gravity="center_vertical"
+                                        android:hint="@string/sdk_pan_f_social_network_txt_put_user_hint"
+                                        android:imeOptions="actionDone"
+                                        android:inputType="textUri"
+                                        android:maxLength="50"
+                                        android:maxLines="1"
+                                        android:padding="@dimen/dimen8"
+                                        android:paddingHorizontal="@dimen/dimen16"
+                                        android:singleLine="true" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/sdkCaptureBackCLButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/dimen16"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sdkPanSocialNetworkCardCL"
+                        app:layout_constraintVertical_bias="0">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/sdkPanSocialNetworkBtnContinue"
+                            style="@style/sdk_pan_btn_blue_gradient"
+                            android:layout_width="match_parent"
+                            android:enabled="false"
+                            android:text="@string/lbl_continue"
+                            app:layout_constraintBottom_toTopOf="@+id/sdkPanSocialNetworkBtnSkip"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/sdkPanSocialNetworkBtnSkip"
+                            style="@style/sdk_pan_btn_white"
+                            android:layout_width="match_parent"
+                            android:layout_marginVertical="@dimen/dimen16"
+                            android:text="@string/sdk_pan_f_social_network_txt_skip"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/sdkPanSocialNetworkBtnContinue" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

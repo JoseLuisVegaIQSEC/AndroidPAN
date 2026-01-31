@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.know_more.sdk_pan_FKnowMore">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen16"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/sdkPanCredentialCLCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dimen16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0">
+
+                    <ImageView
+                        android:id="@+id/sdkPanFKnowMoreIVImage"
+                        android:layout_width="200dp"
+                        android:layout_height="169dp"
+                        android:src="@drawable/img_pan_blue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/sdkPanFKnowMoreLLTexts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen40"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sdkPanFKnowMoreIVImage">
+
+                        <TextView
+                            style="@style/sdk_pan_text_h3_blue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen16"
+                            android:layout_marginTop="@dimen/dimen2"
+                            android:gravity="center"
+                            android:text="@string/sdk_pan_f_did_it_txt_did_it"
+                            android:textAllCaps="true" />
+
+                        <TextView
+                            style="@style/sdk_pan_text_b2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen24"
+                            android:text="@string/sdk_pan_f_did_it_txt_process_finish" />
+
+                        <TextView
+                            style="@style/sdk_pan_text_b2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen24"
+                            android:text="@string/sdk_pan_f_did_it_txt_invite" />
+
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/sdkPanFKnowMoreCLUniPan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen40"
+                        android:background="@drawable/sdk_pan_rounded_white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sdkPanFKnowMoreLLTexts">
+
+                        <ImageView
+                            android:id="@+id/sdkPanFKnowMoreIVUnipan"
+                            android:layout_width="227dp"
+                            android:layout_height="102dp"
+                            android:layout_marginHorizontal="@dimen/dimen16"
+                            android:layout_marginTop="@dimen/dimen22"
+                            android:src="@drawable/sdk_pan_unipan"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/sdkPanFKnowMoreBtnUnipan"
+                            style="@style/sdk_pan_btn_blue_gradient"
+                            android:layout_width="0dp"
+                            android:layout_marginBottom="@dimen/dimen22"
+                            android:layout_marginHorizontal="@dimen/dimen16"
+                            android:layout_marginTop="@dimen/dimen4"
+                            android:background="@drawable/sdk_pan_btn_more"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/sdkPanFKnowMoreIVUnipan"
+                            app:layout_constraintVertical_bias="1" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/sdkPanFKnowMoreCLCandidate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen2"
+                        android:background="@drawable/sdk_pan_rounded_white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sdkPanFKnowMoreCLUniPan">
+
+                        <ImageView
+                            android:id="@+id/sdkPanFKnowMoreIVCandidate"
+                            android:layout_width="227dp"
+                            android:layout_height="102dp"
+                            android:layout_marginHorizontal="@dimen/dimen16"
+                            android:layout_marginTop="@dimen/dimen22"
+                            android:src="@drawable/sdk_pan_candidate"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/sdkPanFKnowMoreBtnCandidate"
+                            style="@style/sdk_pan_btn_blue_gradient"
+                            android:layout_width="0dp"
+                            android:layout_marginBottom="@dimen/dimen22"
+                            android:layout_marginHorizontal="@dimen/dimen16"
+                            android:layout_marginTop="@dimen/dimen4"
+                            android:background="@drawable/sdk_pan_btn_more"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/sdkPanFKnowMoreIVCandidate"
+                            app:layout_constraintVertical_bias="1" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/sdkPanFKnowMoreBtnFinish"
+                        style="@style/sdk_pan_btn_blue_gradient"
+                        android:layout_width="match_parent"
+                        android:layout_marginHorizontal="@dimen/dimen16"
+                        android:layout_marginVertical="@dimen/dimen24"
+                        android:text="@string/sdk_pan_f_did_it_txt_finish"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sdkPanFKnowMoreCLCandidate"
+                        app:layout_constraintVertical_bias="1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,60 @@
+apply plugin: 'maven-publish'
+
+//-SNAPSHOT 1
+//-dev 2
+//-qa 3
+//-prod 4
+
+publishing {
+    def sdkType = prop("SDK_Type_Deployment").toString().toInteger()
+    def suffixVersion = [
+            1: '-SNAPSHOT',
+            2: '-dev',
+            3: '-qa',
+            4: ''
+    ][sdkType]
+
+    def numVersion = prop("SDK_VERSION").toString() + suffixVersion
+
+    print("Publishing Module sdk_pan version: " + numVersion + "\n")
+
+    publications {
+        pan(MavenPublication) {
+            groupId prop("SDK_groupId").toString()
+            artifactId prop("SDK_artifactId").toString()
+            version numVersion
+            artifact "$buildDir/outputs/aar/sdkPan-debug.aar"
+
+            pom.withXml {
+                def dependencies = asNode().appendNode('dependencies')
+                configurations.getByName("debugCompileClasspath").getResolvedConfiguration().getFirstLevelModuleDependencies().each {
+                    def dependency = dependencies.appendNode('dependency')
+                    dependency.appendNode('groupId', it.moduleGroup)
+                    dependency.appendNode('artifactId', it.moduleName)
+                    dependency.appendNode('version', it.moduleVersion)
+                }
+            }
+        }
+
+    }
+    repositories {
+        maven {
+            name = prop("_1_name").toString()
+            url = prop("_1_url").toString()
+            credentials {
+                username = prop("_1_US").toString()
+                username = prop("_1_PS").toString()
+            }
+        }
+    }
+}
+
+def prop(String key) {
+    def propertiesFile = file("${rootDir}/local-env.properties")
+    def properties = new Properties()
+    properties.load(new FileInputStream(propertiesFile))
+    return properties.getProperty(key)
+}
+
+//gradle sdkPan:assembleDebug
+//gradle sdkPan:publish

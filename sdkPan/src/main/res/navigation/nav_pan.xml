@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/Nav_SDK_Welcome_User_Fragment">
+
+    <fragment
+        android:id="@+id/Nav_SDK_Welcome_User_Fragment"
+        android:name="mx.com.iqsec.sdkpan.presentation.sdk_welcome.SDK_FWelcome"
+        android:label="SDK_Welcome_User_Fragment"
+        tools:layout="@layout/f_sdk_welcome">
+        <action
+            android:id="@+id/action_Nav_SDK_Welcome_User_Fragment_to_nav_SDK_FPrivacyView"
+            app:destination="@id/nav_SDK_FPrivacyView"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+        <action
+            android:id="@+id/action_Nav_SDK_Welcome_User_Fragment_to_nav_SDK_sign_user"
+            app:destination="@id/nav_SDK_sign_user"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_SDK_Face_Capture_Notice"
+        android:name="mx.com.iqsec.sdkpan.presentation.captureframes.SDK_FNotice"
+        android:label="@string/sdk_pan_f_test_life_notice_title"
+        tools:layout="@layout/f_sdk_notice">
+        <action
+            android:id="@+id/action_nav_SDK_Face_Capture_Notice_to_nav_SDK_Face_Capture"
+            app:destination="@id/nav_SDK_Face_Capture"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out"
+            app:popUpTo="@+id/nav_SDK_Face_Capture"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_SDK_Face_Capture"
+        android:name="mx.com.iqsec.sdkpan.presentation.captureframes.SDK_FAntispoffing"
+        android:label="@string/sdk_pan_f_test_life_capture_title"
+        tools:layout="@layout/f_sdk_antispoffing">
+
+        <action
+            android:id="@+id/action_nav_SDK_Face_Capture_to_nav_SDK_FNoticeINE"
+            app:destination="@id/nav_SDK_FNoticeINE"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+        <action
+            android:id="@+id/action_nav_SDK_Face_Capture_to_nav_SDK_Face_Capture_Notice"
+            app:destination="@id/nav_SDK_Face_Capture_Notice"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out"
+            app:popUpTo="@+id/nav_SDK_Face_Capture_Notice"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_SDK_Face_Capture_to_SDK_FAntispoffing_Ok"
+            app:destination="@id/SDK_FAntispoffing_Ok"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_SDK_capture_front_ine"
+        android:name="mx.com.iqsec.sdkpan.presentation.sdk_ocr.SDK_FOCRFront"
+        android:label="f_sdk_capture_front_ine"
+        tools:layout="@layout/f_sdk_ocr_frront">
+        <action
+            android:id="@+id/action_SDK_capture_front_ine_to_SDK_capture_back_ine"
+            app:destination="@id/nav_SDK_capture_back_ine"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out"
+            app:popUpTo="@+id/nav_SDK_capture_back_ine"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_SDK_capture_front_ine_to_nav_SDK_FCaptureIne"
+            app:destination="@id/nav_SDK_FCaptureIne"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_SDK_capture_back_ine"
+        android:name="mx.com.iqsec.sdkpan.presentation.sdk_ocr.SDK_FOCRBack"
+        android:label="f_sdk_capture_back_ine"
+        tools:layout="@layout/f_sdk_ocr_back">
+        <action
+            android:id="@+id/action_nav_SDK_capture_back_ine_to_nav_SDK_capture_front_ine"
+            app:destination="@id/nav_SDK_capture_front_ine"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out"
+            app:popUpTo="@+id/nav_SDK_capture_front_ine"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_SDK_capture_back_ine_to_nav_SDK_FCaptureIne"
+            app:destination="@id/nav_SDK_FCaptureIne"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+        <action
+            android:id="@+id/action_nav_SDK_capture_back_ine_to_nav_SDK_FOCR_Complete"
+            app:destination="@id/nav_SDK_FOCR_Complete"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+        <action
+            android:id="@+id/action_nav_SDK_capture_back_ine_to_nav_SDK_Face_Capture_Notice"
+            app:destination="@id/nav_SDK_Face_Capture_Notice"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_SDK_sign_user"
+        android:name="mx.com.iqsec.sdkpan.presentation.sdk_ine.SDK_FSign"
+        android:label="f_sdk_sign_user"
+        tools:layout="@layout/f_sdk_sign">
+        <action
+            android:id="@+id/action_nav_SDK_sign_user_to_nav_SDK_Face_Capture_Notice"
+            app:destination="@id/nav_SDK_Face_Capture_Notice"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_SDK_FPrivacyView"
+        android:name="mx.com.iqsec.sdkpan.presentation.sdk_welcome.SDK_FPrivacyView"
+        android:label="f_sdk_f_privacyview"
+        tools:layout="@layout/f_sdk_f_privacyview">
+        <action
+            android:id="@+id/action_nav_SDK_FPrivacyView_to_Nav_SDK_Welcome_User_Fragment"
+            app:destination="@id/Nav_SDK_Welcome_User_Fragment"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_SDK_FCaptureIne"
+        android:name="mx.com.iqsec.sdkpan.presentation.sdk_ocr.SDK_FCaptureIne"
+        android:label="sdk_fcaptureine"
+        tools:layout="@layout/sdk_fcaptureine">
+        <action
+            android:id="@+id/action_nav_SDK_FCaptureIne_to_nav_SDK_capture_front_ine"
+            app:destination="@id/nav_SDK_capture_front_ine"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+        <action
+            android:id="@+id/action_nav_SDK_FCaptureIne_to_nav_SDK_capture_back_ine"
+            app:destination="@id/nav_SDK_capture_back_ine"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_SDK_FNoticeINE"
+        android:name="mx.com.iqsec.sdkpan.presentation.sdk_ocr.SDK_FNoticeINE"
+        android:label="sdkfnoticeine"
+        tools:layout="@layout/sdkfnoticeine">
+        <action
+            android:id="@+id/action_nav_SDK_FNoticeINE_to_nav_SDK_capture_front_ine"
+            app:destination="@id/nav_SDK_capture_front_ine"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_SDK_FOCR_Complete"
+        android:name="mx.com.iqsec.sdkpan.presentation.sdk_ocr.SDK_FOCR_Complete"
+        android:label="sdk_focrcomplete"
+        tools:layout="@layout/sdk_focrcomplete">
+        <action
+            android:id="@+id/action_nav_SDK_FOCR_Complete_to_nav_UpdateData"
+            app:destination="@id/nav_UpdateData"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_UpdateData"
+        android:name="mx.com.iqsec.sdkpan.presentation.sdk_user_update_info.SDK_FOCR_UpdateData"
+        android:label="sdk_focr_updatedata"
+        tools:layout="@layout/sdk_focr_updatedata">
+        <action
+            android:id="@+id/action_nav_UpdateData_to_nav_FContact_details"
+            app:destination="@id/nav_FContact_details"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+        <action
+            android:id="@+id/action_nav_UpdateData_to_nav_SDK_FNoticeINE"
+            app:destination="@id/nav_SDK_FNoticeINE"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_FSocialNetwork"
+        android:name="mx.com.iqsec.sdkpan.presentation.sdk_social.SDK_FSocialNetwork"
+        android:label="sdk_fsocial_network"
+        tools:layout="@layout/sdk_fsocial_network">
+        <action
+            android:id="@+id/action_nav_FSocialNetwork_to_nav_FInterests"
+            app:destination="@id/nav_FInterests"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+        <action
+            android:id="@+id/action_nav_FSocialNetwork_to_nav_FCredentialUser"
+            app:destination="@id/nav_FCredentialUser"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_FInterests"
+        android:name="mx.com.iqsec.sdkpan.presentation.sdk_interests.sdk_pan_FInterests"
+        android:label="sdk_pan_finterests"
+        tools:layout="@layout/sdk_pan_finterests">
+        <action
+            android:id="@+id/action_nav_FInterests_to_nav_FSocialNetwork"
+            app:destination="@id/nav_FSocialNetwork"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+        <action
+            android:id="@+id/action_nav_FInterests_to_nav_FContact_details"
+            app:destination="@id/nav_FContact_details"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_FContact_details"
+        android:name="mx.com.iqsec.sdkpan.presentation.sdk_constac_details.SDK_FContact_details"
+        android:label="sdk_fcontact_details"
+        tools:layout="@layout/sdk_fcontact_details">
+        <action
+            android:id="@+id/action_nav_FContact_details_to_nav_FInterests"
+            app:destination="@id/nav_FInterests"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+        <action
+            android:id="@+id/action_nav_FContact_details_to_nav_UpdateData"
+            app:destination="@id/nav_UpdateData"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_FCredentialUser"
+        android:name="mx.com.iqsec.sdkpan.presentation.sdk_credential.sdk_pan_FCredentialUser"
+        android:label="sdk_pan_fcredentialuser"
+        tools:layout="@layout/sdk_pan_fcredentialuser">
+        <action
+            android:id="@+id/action_nav_FCredentialUser_to_nav_FKnowMore"
+            app:destination="@id/nav_FKnowMore"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_FKnowMore"
+        android:name="mx.com.iqsec.sdkpan.presentation.know_more.sdk_pan_FKnowMore"
+        android:label="sdk_pan_fknow_more"
+        tools:layout="@layout/sdk_pan_fknow_more" />
+    <fragment
+        android:id="@+id/SDK_FAntispoffing_Ok"
+        android:name="mx.com.iqsec.sdkpan.presentation.captureframes.SDK_FAntispoffing_Ok"
+        android:label="sdk_f_antispoffing_ok"
+        tools:layout="@layout/sdk_f_antispoffing_ok">
+        <action
+            android:id="@+id/action_SDK_FAntispoffing_Ok_to_nav_SDK_FNoticeINE"
+            app:destination="@id/nav_SDK_FNoticeINE"
+            app:enterAnim="@anim/sdk_a_slide_in"
+            app:exitAnim="@anim/sdk_a_fade_out"
+            app:popEnterAnim="@anim/sdk_a_fade_in"
+            app:popExitAnim="@anim/sdk_a_slide_out"/>
+    </fragment>
+</navigation>

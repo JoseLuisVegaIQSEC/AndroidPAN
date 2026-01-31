@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.SDK_PAN">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen16"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/sdkPanWelcomeImg02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/img_welcome_h"
+                    android:layout_marginHorizontal="@dimen/text20"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_pan_welcome_01"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/SdkPanWelcomeCLChooseRole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen24"
+                    android:paddingHorizontal="@dimen/dimen8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sdkPanWelcomeImg02">
+
+                    <TextView
+                        android:id="@+id/sdkPanWelcomeTxtChooseRole"
+                        style="@style/sdk_pan_text_h3_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sdk_pan_welcome_choose_role"
+                        android:textAllCaps="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/sdkPanWelcomeRGChooseRole"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sdkPanWelcomeTxtChooseRole">
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/sdkPanWelcomeRBtnCandidate"
+                            style="@style/sdk_pan_radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen16"
+                            android:text="@string/sdk_pan_welcome_militant"
+                            android:textAllCaps="true"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/sdkPanWelcomeTxtChooseRole" />
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/sdkPanWelcomeRBtnForeignCandidate"
+                            style="@style/sdk_pan_radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen16"
+                            android:text="@string/sdk_pan_welcome_foreign_militant"
+                            android:textAllCaps="true"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/sdkPanWelcomeTxtChooseRole" />
+
+                    </RadioGroup>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/sdkPanWelcomecbTerms"
+                    style="@style/sdk_pan_text_h7_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen24"
+                    android:checked="false"
+                    android:paddingStart="@dimen/dimen6"
+                    android:text="@string/sdk_pan_welcome_terns"
+                    android:textAllCaps="true"
+                    app:buttonIconTint="@color/sdk_wfc_white"
+                    app:buttonTint="@color/sdk_pan_welcome_blue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/SdkPanWelcomeCLChooseRole"
+                    app:layout_constraintVertical_bias="0">
+
+                </com.google.android.material.checkbox.MaterialCheckBox>
+
+                <TextView
+                    android:id="@+id/sdkPanWelcomeTxtPrivacy"
+                    style="@style/sdk_pan_text_h2_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen24"
+                    android:layout_marginTop="@dimen/dimen24"
+                    android:autoLink="none"
+                    android:text="@string/sdk_pan_wellcome_privacy"
+                    android:textAllCaps="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sdkPanWelcomecbTerms" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/sdPanWelcomeBtnStart"
+                    style="@style/sdk_pan_btn_blue_gradient"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen48"
+                    android:layout_marginTop="@dimen/text16"
+                    android:layout_marginBottom="@dimen/dimen24"
+                    android:enabled="false"
+                    android:text="@string/sdk_pan_welcome_start_registration"
+                    android:textAllCaps="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sdkPanWelcomeTxtPrivacy" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="sdk_captura_frames_showinstructions">false</bool>
+    <bool name="sdk_draw_landmarks">true</bool>
+</resources>

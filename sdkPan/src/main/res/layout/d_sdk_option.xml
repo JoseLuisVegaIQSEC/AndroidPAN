@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sdk_wfc_transparent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen16"
+        android:background="@drawable/alert_rounded_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lldaCancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/dimen16"
+            android:layout_marginVertical="@dimen/text24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/sdk_d_title"
+                style="@style/sdk_pan_text_nav_blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias=".2"
+                tools:text="@string/sdk_pan_d_option_want_go_out" />
+
+
+            <TextView
+                android:id="@+id/DaCancelMessage"
+                style="@style/sdk_pan_text_b2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dimen16"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sdk_d_title"
+                tools:text="Si abandonas el proceso en este momento, tendrás que volver a empezar desde el inicio." />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sdkDACancelButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/DaCancelMessage">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/DaCancelbtnBlue"
+                    style="@style/sdk_pan_btn_blue_gradient"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen40"
+                    android:layout_marginTop="@dimen/dimen24"
+                    android:text="@string/sdk_pan_d_option_continue_registration"
+                    app:layout_constraintBottom_toTopOf="@+id/DaCancelbtnWhite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/DaCancelbtnWhite"
+                    style="@style/sdk_pan_btn_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen40"
+                    android:layout_marginTop="@dimen/dimen24"
+                    android:text="@string/sdk_pan_d_option_go_out"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/DaCancelbtnBlue" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.sdk_constac_details.SDK_FContact_details">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen24"
+        android:background="@drawable/sdk_pan_card_gray"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/sdkCaptureBackCLContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginHorizontal="@dimen/dimen8"
+                    android:layout_marginTop="@dimen/dimen8"
+                    android:layout_marginBottom="@dimen/dimen32"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/noticeHSTop">
+
+                    <TextView
+                        android:id="@+id/sdkPanSocialNetworkTxtTitle"
+                        style="@style/sdk_pan_title_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_contact_details_txt_contact_details"
+                        android:textAllCaps="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/sdkPanSocialNetworkSubtitle"
+                        style="@style/sdk_pan_text_b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen30"
+                        android:text="@string/fragment_contact_details_txt_instructions"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sdkPanSocialNetworkTxtTitle" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/sdkPanContactDetailsCLCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dimen8"
+                        android:layout_marginVertical="@dimen/dimen24"
+                        android:background="@drawable/sdk_pan_card_white"
+                        android:elevation="@dimen/dimen12"
+                        android:paddingHorizontal="@dimen/dimen8"
+                        android:paddingVertical="@dimen/dimen16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sdkPanSocialNetworkSubtitle">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/sdk_pan_text_h8_black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="@string/fragment_contact_details_txt_email" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/sdkPanContactDetailsTIEmal"
+                                    style="@style/sdk_pan_text_input_01"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen4"
+                                    app:hintEnabled="false">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        style="@style/sdk_pan_input_text_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dimen40"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzñ0123456789@._-"
+                                        android:gravity="start|center_vertical"
+                                        android:hint="@string/fragment_contact_details_txt_email_hint"
+                                        android:imeOptions="actionDone"
+                                        android:inputType="textEmailAddress"
+                                        android:maxLines="1"
+                                        android:padding="@dimen/dimen8"
+                                        android:paddingHorizontal="@dimen/dimen16"
+                                        android:singleLine="true" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dimen16"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/sdk_pan_text_h8_black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="@string/fragment_contact_details_txt_phone" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/sdkPanContactDetailsTIPhoneNumber"
+                                    style="@style/sdk_pan_text_input_01"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen4"
+                                    app:hintEnabled="false">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        style="@style/sdk_pan_input_text_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dimen40"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        android:digits="0123456789"
+                                        android:ellipsize="end"
+                                        android:gravity="center_vertical"
+                                        android:hint="@string/fragment_contact_details_txt_phone_hint"
+                                        android:imeOptions="actionDone"
+                                        android:inputType="number"
+                                        android:maxLength="10"
+                                        android:maxLines="1"
+                                        android:padding="@dimen/dimen8"
+                                        android:paddingHorizontal="@dimen/dimen16" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/sdkPanAdditionalDetailsTxtTitle"
+                        style="@style/sdk_pan_title_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen32"
+                        android:text="@string/fragment_contact_details_txt_aditional_data"
+                        android:textAllCaps="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sdkPanContactDetailsCLCard" />
+
+                    <TextView
+                        android:id="@+id/sdkPanAdditionalDetailsSubtitle"
+                        style="@style/sdk_pan_text_b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen30"
+                        android:text="@string/fragment_contact_details_txt_aditional_data_instructions"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sdkPanAdditionalDetailsTxtTitle" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dimen8"
+                        android:layout_marginVertical="@dimen/dimen24"
+                        android:background="@drawable/sdk_pan_card_white"
+                        android:elevation="@dimen/dimen12"
+                        android:paddingHorizontal="@dimen/dimen8"
+                        app:layout_constraintBottom_toTopOf="@+id/sdkCaptureBackCLButtons"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sdkPanAdditionalDetailsSubtitle">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/sdk_pan_text_h8_black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen14"
+                                    android:gravity="start"
+                                    android:text="@string/fragment_contact_details_txt_schooling" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/sdkPanContactDetailsTIEducationLevel"
+                                    style="@style/sdk_pan_text_input_01"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen4"
+                                    app:hintEnabled="false"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <Spinner
+                                        android:id="@+id/sdkPanContactDetailsSPEducationLevel"
+                                        style="@style/sdk_pan_spinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dimen40"
+                                        android:gravity="center_vertical"
+                                        android:popupBackground="@color/sdk_wfc_white"
+                                        android:spinnerMode="dropdown" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dimen16"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/sdk_pan_text_h8_black"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="@string/fragment_contact_details_txt_speak_any_dialect" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/sdkPanContactDetailsTIDialect"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:hintEnabled="false"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <RadioGroup
+                                        android:id="@+id/sdkPanContactDetailsRGDialect"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@+id/sdkPanWelcomeTxtChooseRole">
+
+                                        <com.google.android.material.radiobutton.MaterialRadioButton
+                                            android:id="@+id/sdkPanContactDetailsRBDialectYes"
+                                            style="@style/sdk_pan_radiobutton_transparent"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/fragment_contact_details_txt_yes"
+                                            android:textAllCaps="true"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/sdkPanWelcomeTxtChooseRole" />
+
+                                        <com.google.android.material.radiobutton.MaterialRadioButton
+                                            android:id="@+id/sdkPanContactDetailsRBDialectNo"
+                                            style="@style/sdk_pan_radiobutton_transparent"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/dimen14"
+                                            android:text="@string/fragment_contact_details_txt_no"
+                                            android:textAllCaps="true"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/sdkPanWelcomeTxtChooseRole" />
+
+                                    </RadioGroup>
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/sdkPanContactDetailsLLDialectInput"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <TextView
+                                    style="@style/sdk_pan_text_b2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="@string/fragment_contact_details_txt_dialect" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/sdkPanContactDetailsTIDialectInput"
+                                    style="@style/sdk_pan_text_input_01"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen16"
+                                    android:layout_marginBottom="@dimen/dimen32"
+                                    app:counterMaxLength="30"
+                                    app:hintEnabled="false"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        style="@style/sdk_pan_input_text_01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dimen40"
+                                        android:layout_marginTop="@dimen/dimen4"
+                                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÜÑ., "
+                                        android:gravity="start|center|top"
+                                        android:imeOptions="actionDone"
+                                        android:inputType="textCapCharacters"
+                                        android:maxLength="30"
+                                        android:hint="@string/fragment_contact_details_txt_dialect_hint"
+                                        android:maxLines="1"
+                                        android:singleLine="true"
+                                        android:padding="@dimen/dimen8"
+                                        android:paddingHorizontal="@dimen/dimen16" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/sdkCaptureBackCLButtons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen16"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/sdkPanContactDetailsBtnContinue"
+                            style="@style/sdk_pan_btn_blue_gradient"
+                            android:layout_width="match_parent"
+                            android:text="@string/lbl_continue"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
